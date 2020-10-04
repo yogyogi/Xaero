@@ -1,4 +1,4 @@
-#”Xaero” - Entity Framework Core Advanced Project
+# “Xaero” - Entity Framework Core Advanced Project
 ![Xaero]( https://raw.githubusercontent.com/yogyogi/Xaero/Images/Xaero.png)
 ## Releases
 v1.0 
