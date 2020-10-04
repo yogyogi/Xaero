@@ -11,6 +11,7 @@ The “Xaero” Project is a Movie Project which is quite big and advanced. It w
 There are 5 database tables to manage these stuffs and they have Relationships among themselves like – One-to-Many, One-to-One & Many-to-Many.
 
 The Database diagram is given below.
+
 ![database diagram](Images/database%20diagram%20tables%20relationship.png)
 
 ## What you will learn from this Project
