@@ -1,5 +1,5 @@
 # “Xaero” - Entity Framework Core Advanced Project
-![Xaero](Images/Xaero.png)
+![Xaero](Images/Xaero.png "Xaero")
 ## Releases
 v1.0 
 ## About 
@@ -12,7 +12,7 @@ There are 5 database tables to manage these stuffs and they have Relationships a
 
 The Database diagram is given below.
 
-![database diagram](Images/database%20diagram%20tables%20relationship.png)
+![database diagram](Images/database%20diagram%20tables%20relationship.png "database diagram")
 
 ## What you will learn from this Project
 [Entity Framework Core 3.1]( https://www.yogihosting.com/category/ef-core/) is the latest and most powerful **Object/Relational Mapping (O/RM)** framework for performing database operations. Users will learn how to make a *Professional and Advanced Project* with it. They will learn:
