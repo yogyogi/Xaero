@@ -1,0 +1,39 @@
+﻿@model ProductionCompany
+
+@{
+    ViewData["Title"] = "Update a Production";
+}
+
+<h1 class="bg-info text-white">Update a Production</h1>
+<a asp-action="Index" class="btn btn-secondary">View all Productions</a>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Id"></label>
+        <input type="text" asp-for="Id" disabled class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input type="text" asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Logo"></label>
+        <img src="@Url.Content(Model.Logo)" />
+        <input type="text" asp-for="Logo" hidden />
+        <input type="file" id="mLogo" name="mLogo" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="AnnualRevenue"></label>
+        <input type="text" asp-for="AnnualRevenue" class="form-control" />
+        <span asp-validation-for="AnnualRevenue" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EstablishmentDate"></label>
+        <input type="date" asp-for="EstablishmentDate" class="form-control" />
+        <span asp-validation-for="EstablishmentDate" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

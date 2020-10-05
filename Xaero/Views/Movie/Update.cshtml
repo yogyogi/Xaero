@@ -1,0 +1,49 @@
+﻿@model Movie
+
+@{
+    ViewData["Title"] = "Update a Movie";
+}
+
+<h1 class="bg-info text-white">Update a Movie</h1>
+<a asp-action="Index" class="btn btn-secondary">View all Movies</a>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Id"></label>
+        <input type="text" asp-for="Id" disabled class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.MovieDetail_R.Name"></label>
+        <input type="text" asp-for="@Model.MovieDetail_R.Name" class="form-control" />
+        <span asp-validation-for="@Model.MovieDetail_R.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ProductionCompanyId">Production Company</label>
+        <select asp-for="ProductionCompanyId" asp-items="ViewBag.Production" class="form-control">
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.MovieDetail_R.Poster"></label>
+        <img src="@Url.Content(Model.MovieDetail_R.Poster)" width="500" />
+        <input type="text" asp-for="@Model.MovieDetail_R.Poster" hidden />
+        <input type="file" id="mPoster" name="mPoster" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.MovieDetail_R.Budget"></label>
+        <input type="text" asp-for="@Model.MovieDetail_R.Budget" class="form-control" />
+        <span asp-validation-for="@Model.MovieDetail_R.Budget" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.MovieDetail_R.Gross"></label>
+        <input type="text" asp-for="@Model.MovieDetail_R.Gross" class="form-control" />
+        <span asp-validation-for="@Model.MovieDetail_R.Gross" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.MovieDetail_R.ReleaseDate"></label>
+        <input type="date" asp-for="@Model.MovieDetail_R.ReleaseDate" class="form-control" />
+        <span asp-validation-for="@Model.MovieDetail_R.ReleaseDate" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

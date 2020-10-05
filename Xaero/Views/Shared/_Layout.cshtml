@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        table tr th.sort:hover {
+            cursor: pointer;
+        }
+
+        table tr td img {
+            width: 200px;
+            height: auto;
+        }
+
+        .pagingDiv {
+            background: #f2f2f2;
+        }
+
+            .pagingDiv > a {
+                display: inline-block;
+                padding: 0px 9px;
+                margin-right: 4px;
+                border-radius: 3px;
+                border: solid 1px #c0c0c0;
+                background: #e9e9e9;
+                box-shadow: inset 0px 1px 0px rgba(255,255,255, .8), 0px 1px 3px rgba(0,0,0, .1);
+                font-size: .875em;
+                font-weight: bold;
+                text-decoration: none;
+                color: #717171;
+                text-shadow: 0px 1px 0px rgba(255,255,255, 1);
+            }
+
+                .pagingDiv > a:hover {
+                    background: #fefefe;
+                    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#f0f0f0));
+                    background: -moz-linear-gradient(0% 0% 270deg,#FEFEFE, #f0f0f0);
+                }
+
+                .pagingDiv > a.active {
+                    border: none;
+                    background: #616161;
+                    box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .8);
+                    color: #f0f0f0;
+                    text-shadow: 0px 0px 3px rgba(0,0,0, .5);
+                }
+    </style>
+</head>
+<body>
+    <div class="m-1 p-1">
+        @RenderBody()
+    </div>
+    <script>
+        var dth = document.getElementsByTagName("table").item(0).getElementsByClassName("sort");
+        var cVal = decodeURIComponent(getCookie("sortCookie"));
+        var nColOrder = "";
+        if (cVal != "null") {
+            var colName = cVal.split(',')[0];
+            var colOrder = cVal.split(',')[1];
+            var colClicked = Array.from(document.querySelectorAll("th")).find(el => el.innerText == colName);
+            
+            if (colOrder == "asc")
+                colClicked.innerHTML += "<img src=\"/Images/up.png\" />";
+            else
+                colClicked.innerHTML += "<img src=\"/Images/down.png\" />";
+        }
+
+        for (let i = 0; i < dth.length; i++) {
+            dth[i].addEventListener("click", function (e) {
+
+                if (cVal != null) {
+                    var colName = cVal.split(',')[0];
+                    var colOrder = cVal.split(',')[1];
+                    var clickedColumn = this.innerText.replace(/<[^>]*>?/gm, '');
+
+                    if (clickedColumn == colName) {
+                        if (colOrder == "asc")
+                            nColOrder = "desc";
+                        else
+                            nColOrder = "asc";
+
+                        setCookie("sortCookie", clickedColumn + "," + nColOrder);
+                    }
+                    else {
+                        setCookie("sortCookie", clickedColumn + ",asc");
+                    }
+                }
+                else {
+                    setCookie("sortCookie", clickedColumn + ",asc");
+                }
+
+                var cUrl = window.location.href;
+                if(cUrl.includes("Production"))
+                    window.location = "@Url.Action("Index","Production")";
+                else if(cUrl.includes("Movie"))
+                    window.location = "@Url.Action("Index","Movie")";
+                 else if(cUrl.includes("Distribution"))
+                    window.location="@Url.Action("Index","Distribution")";
+            });
+        }
+
+        function setCookie(name, value) {
+            var expires = new Date();
+            expires.setTime(expires.getTime() + (1 * 60 * 60 * 1000)); // adding 1 hour
+            document.cookie = name + '=' + encodeURIComponent(value) + ';path=/;expires=' + expires.toUTCString();
+        }
+
+        function getCookie(name) {
+            var value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+            return value ? value[2] : null;
+        }
+    </script>
+</body>
+</html>
