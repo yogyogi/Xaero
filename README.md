@@ -59,6 +59,7 @@ Or, If you are feeling really generous, [Support the Project with a small contri
 1. Clone this Repository and Extract it to a Folder.
 2. Do Migrations to create the database   
 Feel Free to Clone the Project and try it out. Raise any issues / requests that you may find.
+3. I have posted a [10,000+ words tutorial of Xaero covering all the aspects from A to Z](https://www.yogihosting.com/xaero-project-entity-framework-core/). Do Visit it.
 
 ## Support
 Support This Project to keep it active.
