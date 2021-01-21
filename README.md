@@ -47,8 +47,8 @@ If you found this Implementation helpful or used it in your Projects, do give it
 Or, If you are feeling really generous, [Support the Project with a small contribution!](https://www.buymeacoffee.com/YogYogi)
 
 ### Tech Stack
-- ASP.NET Core 3.1 
-- Entity Framework Core 3.1
+- ASP.NET Core 5.0 
+- Entity Framework Core 5.0
 - MS SQL Server
 - JavaScript
 - Bootstrap 4
