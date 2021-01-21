@@ -21,7 +21,7 @@ The Database diagram is given below.
 ![Working Video](Images/working%20video.gif "Working Video")
 
 ## What you will learn from this Project
-[Entity Framework Core 3.1]( https://www.yogihosting.com/category/ef-core/) is the latest and most powerful **Object/Relational Mapping (O/RM)** framework for performing database operations. Users will learn how to make a *Professional and Advanced Project* with it. They will learn:
+[Entity Framework Core]( https://www.yogihosting.com/category/ef-core/) is the latest and most powerful **Object/Relational Mapping (O/RM)** framework for performing database operations. Users will learn how to make a *Professional and Advanced Project* with it. They will learn:
 
 - [x] CRUD Operations
 - [x] Inserting & Updating Single, Multiple and Related records.
