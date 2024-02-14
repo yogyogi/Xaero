@@ -65,6 +65,7 @@ Feel Free to Clone the Project and try it out. Raise any issues / requests that 
 Support This Project to keep it active.
 
 <a href="https://www.buymeacoffee.com/YogYogi" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" width="200"></a>
+<a href="https://www.paypal.com/paypalme/yogihosting" target="_blank"><img src="https://raw.githubusercontent.com/yogyogi/yogyogi/main/paypal.png" alt="Paypal Me" width="300"></a>
 
 ## About the Author
 ### YogYogi
