@@ -1,0 +1,44 @@
+﻿@model List<ProductionCompany>
+
+@{
+    ViewData["Title"] = "Production Companies";
+}
+
+<h1 class="bg-info text-white">Production Companies</h1>
+<a asp-action="Create" class="btn btn-secondary">Create Production</a>
+
+<table class="table table-sm table-bordered">
+    <tr>
+        <th class="sort">Id</th>
+        <th class="sort">Name</th>
+        <th>Logo</th>
+        <th class="sort">Annual Revenue</th>
+        <th class="sort">Establishment Date</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    @foreach (ProductionCompany pc in Model)
+    {
+        <tr>
+            <td>@pc.Id</td>
+            <td>@pc.Name</td>
+            <td><img src="@Url.Content(pc.Logo)" /></td>
+            <td>@pc.AnnualRevenue.ToString("F2")</td>
+            <td>@pc.EstablishmentDate.ToString("d")</td>
+            <td>
+                <a class="btn btn-sm btn-primary" asp-action="Update" asp-route-id="@pc.Id">
+                    Update
+                </a>
+            </td>
+            <td>
+                <form asp-action="Delete" asp-route-id="@pc.Id" method="post">
+                    <button type="submit" class="btn btn-sm btn-danger">
+                        Delete
+                    </button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+
+<div class="pagingDiv" page-model="@ViewBag.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="paging" page-class-selected="active"></div>

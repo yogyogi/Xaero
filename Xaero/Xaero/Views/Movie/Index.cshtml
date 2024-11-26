@@ -1,0 +1,54 @@
+﻿@model List<Movie>
+
+@{
+    ViewData["Title"] = "Movie";
+}
+
+<h1 class="bg-info text-white">Movies</h1>
+<a asp-action="Create" class="btn btn-secondary">Create Movie</a>
+
+<table class="table table-sm table-bordered">
+    <tr>
+        <th class="sort">Id</th>
+        <th class="sort">Name</th>
+        <th>Production Company</th>
+        <th>Poster</th>
+        <th class="sort">Budget</th>
+        <th class="sort">Gross</th>
+        <th class="sort">Release Date</th>
+        <th>Movie Distribution</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    @foreach (Movie movie in Model)
+    {
+        <tr>
+            <td>@movie.Id</td>
+            <td>@movie.MovieDetail_R.Name</td>
+            <td>@movie.ProductionCompany_R.Name</td>
+            <td><img src="@Url.Content(movie.MovieDetail_R.Poster)" /></td>
+            <td>@movie.MovieDetail_R.Budget.ToString("F2")</td>
+            <td>@movie.MovieDetail_R.Gross.ToString("F2")</td>
+            <td>@movie.MovieDetail_R.ReleaseDate.ToString("d")</td>
+            <td>
+                <a class="btn btn-sm btn-danger" asp-controller="MovieDistribution" asp-action="Update" asp-route-id="@movie.Id">
+                    Movie Distribution
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-sm btn-primary" asp-action="Update" asp-route-id="@movie.Id">
+                    Update
+                </a>
+            </td>
+            <td>
+                <form asp-action="Delete" asp-route-id="@movie.Id" method="post">
+                    <button type="submit" class="btn btn-sm btn-danger">
+                        Delete
+                    </button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+
+<div class="pagingDiv" page-model="@ViewBag.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="paging" page-class-selected="active"></div>

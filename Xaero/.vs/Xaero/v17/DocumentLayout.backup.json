@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{71A5C675-2D8F-4CF5-85FA-298FD3FC5A78}|Xaero\\Xaero.csproj|e:\\yogesh\\seo\\yogihosting\\new\\xaero\\xaero\\controllers\\distributioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A5C675-2D8F-4CF5-85FA-298FD3FC5A78}|Xaero\\Xaero.csproj|solutionrelative:xaero\\controllers\\distributioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A5C675-2D8F-4CF5-85FA-298FD3FC5A78}|Xaero\\Xaero.csproj|e:\\yogesh\\seo\\yogihosting\\new\\xaero\\xaero\\models\\distribution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A5C675-2D8F-4CF5-85FA-298FD3FC5A78}|Xaero\\Xaero.csproj|solutionrelative:xaero\\models\\distribution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A5C675-2D8F-4CF5-85FA-298FD3FC5A78}|Xaero\\Xaero.csproj|e:\\yogesh\\seo\\yogihosting\\new\\xaero\\xaero\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A5C675-2D8F-4CF5-85FA-298FD3FC5A78}|Xaero\\Xaero.csproj|solutionrelative:xaero\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A5C675-2D8F-4CF5-85FA-298FD3FC5A78}|Xaero\\Xaero.csproj|e:\\yogesh\\seo\\yogihosting\\new\\xaero\\xaero\\models\\moviecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A5C675-2D8F-4CF5-85FA-298FD3FC5A78}|Xaero\\Xaero.csproj|solutionrelative:xaero\\models\\moviecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A5C675-2D8F-4CF5-85FA-298FD3FC5A78}|Xaero\\Xaero.csproj|e:\\yogesh\\seo\\yogihosting\\new\\xaero\\xaero\\models\\moviedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A5C675-2D8F-4CF5-85FA-298FD3FC5A78}|Xaero\\Xaero.csproj|solutionrelative:xaero\\models\\moviedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DistributionController.cs",
+              "DocumentMoniker": "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\Controllers\\DistributionController.cs",
+              "RelativeDocumentMoniker": "Xaero\\Controllers\\DistributionController.cs",
+              "ToolTip": "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\Controllers\\DistributionController.cs",
+              "RelativeToolTip": "Xaero\\Controllers\\DistributionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T12:49:16.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Distribution.cs",
+              "DocumentMoniker": "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\Models\\Distribution.cs",
+              "RelativeDocumentMoniker": "Xaero\\Models\\Distribution.cs",
+              "ToolTip": "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\Models\\Distribution.cs",
+              "RelativeToolTip": "Xaero\\Models\\Distribution.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T11:13:21.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MovieDetail.cs",
+              "DocumentMoniker": "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\Models\\MovieDetail.cs",
+              "RelativeDocumentMoniker": "Xaero\\Models\\MovieDetail.cs",
+              "ToolTip": "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\Models\\MovieDetail.cs",
+              "RelativeToolTip": "Xaero\\Models\\MovieDetail.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T11:13:23.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "Xaero\\Models\\Movie.cs",
+              "ToolTip": "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\Models\\Movie.cs",
+              "RelativeToolTip": "Xaero\\Models\\Movie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T15:48:07.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MovieContext.cs",
+              "DocumentMoniker": "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\Models\\MovieContext.cs",
+              "RelativeDocumentMoniker": "Xaero\\Models\\MovieContext.cs",
+              "ToolTip": "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\Models\\MovieContext.cs",
+              "RelativeToolTip": "Xaero\\Models\\MovieContext.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAiwGIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T12:04:52.055Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
