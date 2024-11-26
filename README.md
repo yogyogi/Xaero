@@ -2,7 +2,8 @@
 ![Xaero](Images/Xaero.png "Xaero")
 
 ## Releases
-v1.0 
+v1.0. Now updated to .NET 9.0
+ 
 ## About 
 The “Xaero” Project is a Movie Project which is quite big and advanced. It will manage the records of a Movie Company like:
 1. The Production Company which are creating movies.
@@ -47,11 +48,11 @@ If you found this Implementation helpful or used it in your Projects, do give it
 Or, If you are feeling really generous, [Support the Project with a small contribution!](https://www.buymeacoffee.com/YogYogi)
 
 ### Tech Stack
-- ASP.NET Core 5.0 
-- Entity Framework Core 5.0
+- ASP.NET Core 9.0 
+- Entity Framework Core 9.0
 - MS SQL Server
 - JavaScript
-- Bootstrap 4
+- Bootstrap 5
 
 ### Getting Started
 0. Make sure you have EF CLI Tools installed. Open up Powershell and run the following command
