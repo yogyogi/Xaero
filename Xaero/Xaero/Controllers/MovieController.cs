@@ -48,59 +48,57 @@ namespace Xaero.Controllers
 
             List<Movie> result;
 
-            if (sortColumn == "")
-                result = context.Movie.Skip(skip).Take(pageSize).Include(s => s.MovieDetail_R).Include(s => s.ProductionCompany_R).ToList();
-            else
+            var query = context.Movie.Include(s => s.MovieDetail_R).Include(s => s.ProductionCompany_R).AsQueryable();
+
+            if (sortValue == "asc")
             {
-                if (sortValue == "asc")
+                switch (sortColumn)
                 {
-                    switch (sortColumn)
-                    {
-                        case "Id":
-                            result = context.Movie.OrderBy(s => s.Id).Skip(skip).Take(pageSize).Include(s => s.MovieDetail_R).Include(s => s.ProductionCompany_R).ToList();
-                            break;
-                        case "Name":
-                            result = context.Movie.OrderBy(s => s.MovieDetail_R.Name).Skip(skip).Take(pageSize).Include(s => s.MovieDetail_R).Include(s => s.ProductionCompany_R).ToList();
-                            break;
-                        case "Budget":
-                            result = context.Movie.OrderBy(s => s.MovieDetail_R.Budget).Skip(skip).Take(pageSize).Include(s => s.MovieDetail_R).Include(s => s.ProductionCompany_R).ToList();
-                            break;
-                        case "Gross":
-                            result = context.Movie.OrderBy(s => s.MovieDetail_R.Gross).Skip(skip).Take(pageSize).Include(s => s.MovieDetail_R).Include(s => s.ProductionCompany_R).ToList();
-                            break;
-                        case "Release Date":
-                            result = context.Movie.OrderBy(s => s.MovieDetail_R.ReleaseDate).Skip(skip).Take(pageSize).Include(s => s.MovieDetail_R).Include(s => s.ProductionCompany_R).ToList();
-                            break;
-                        default:
-                            result = context.Movie.OrderBy(s => s.MovieDetail_R.Name).Skip(skip).Take(pageSize).Include(s => s.MovieDetail_R).Include(s => s.ProductionCompany_R).ToList();
-                            break;
-                    }
-                }
-                else
-                {
-                    switch (sortColumn)
-                    {
-                        case "Id":
-                            result = context.Movie.OrderByDescending(s => s.Id).Skip(skip).Take(pageSize).Include(s => s.MovieDetail_R).Include(s => s.ProductionCompany_R).ToList();
-                            break;
-                        case "Name":
-                            result = context.Movie.OrderByDescending(s => s.MovieDetail_R.Name).Skip(skip).Take(pageSize).Include(s => s.MovieDetail_R).Include(s => s.ProductionCompany_R).ToList();
-                            break;
-                        case "Budget":
-                            result = context.Movie.OrderByDescending(s => s.MovieDetail_R.Budget).Skip(skip).Take(pageSize).Include(s => s.MovieDetail_R).Include(s => s.ProductionCompany_R).ToList();
-                            break;
-                        case "Gross":
-                            result = context.Movie.OrderByDescending(s => s.MovieDetail_R.Gross).Skip(skip).Take(pageSize).Include(s => s.MovieDetail_R).Include(s => s.ProductionCompany_R).ToList();
-                            break;
-                        case "Release Date":
-                            result = context.Movie.OrderByDescending(s => s.MovieDetail_R.ReleaseDate).Skip(skip).Take(pageSize).Include(s => s.MovieDetail_R).Include(s => s.ProductionCompany_R).ToList();
-                            break;
-                        default:
-                            result = context.Movie.OrderByDescending(s => s.MovieDetail_R.Name).Skip(skip).Take(pageSize).Include(s => s.MovieDetail_R).Include(s => s.ProductionCompany_R).ToList();
-                            break;
-                    }
+                    case "Id":
+                        query = query.OrderBy(s => s.Id);
+                        break;
+                    case "Name":
+                        query = query.OrderBy(s => s.MovieDetail_R.Name);
+                        break;
+                    case "Budget":
+                        query = query.OrderBy(s => s.MovieDetail_R.Budget);
+                        break;
+                    case "Gross":
+                        query = query.OrderBy(s => s.MovieDetail_R.Gross);
+                        break;
+                    case "Release Date":
+                        query = query.OrderBy(s => s.MovieDetail_R.ReleaseDate);
+                        break;
+                    default:
+                        query = query.OrderBy(s => s.MovieDetail_R.Name);
+                        break;
                 }
             }
+            else
+            {
+                switch (sortColumn)
+                {
+                    case "Id":
+                        query = query.OrderByDescending(s => s.Id);
+                        break;
+                    case "Name":
+                        query = query.OrderByDescending(s => s.MovieDetail_R.Name);
+                        break;
+                    case "Budget":
+                        query = query.OrderByDescending(s => s.MovieDetail_R.Budget);
+                        break;
+                    case "Gross":
+                        query = query.OrderByDescending(s => s.MovieDetail_R.Gross);
+                        break;
+                    case "Release Date":
+                        query = query.OrderByDescending(s => s.MovieDetail_R.ReleaseDate);
+                        break;
+                    default:
+                        query = query.OrderByDescending(s => s.MovieDetail_R.Name);
+                        break;
+                }
+            }
+            result = query.Skip(skip).Take(pageSize).ToList();
 
             return result;
         }

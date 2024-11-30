@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\Xaero.csproj": {}
+    "C:\\Users\\Avita\\Documents\\GitHub\\Xaero\\Xaero\\Xaero\\Xaero.csproj": {}
   },
   "projects": {
-    "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\Xaero.csproj": {
+    "C:\\Users\\Avita\\Documents\\GitHub\\Xaero\\Xaero\\Xaero\\Xaero.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\Xaero.csproj",
+        "projectUniqueName": "C:\\Users\\Avita\\Documents\\GitHub\\Xaero\\Xaero\\Xaero\\Xaero.csproj",
         "projectName": "Xaero",
-        "projectPath": "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\Xaero.csproj",
+        "projectPath": "C:\\Users\\Avita\\Documents\\GitHub\\Xaero\\Xaero\\Xaero\\Xaero.csproj",
         "packagesPath": "C:\\Users\\Avita\\.nuget\\packages\\",
-        "outputPath": "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\obj\\",
+        "outputPath": "C:\\Users\\Avita\\Documents\\GitHub\\Xaero\\Xaero\\Xaero\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Xaero")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0a3a3e20669ee392854e98188513a7a71ab7b8a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Xaero")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Xaero")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

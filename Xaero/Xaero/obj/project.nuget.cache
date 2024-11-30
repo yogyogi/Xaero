@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1/al1LJIyEs=",
+  "dgSpecHash": "ggfNXlKVtCc=",
   "success": true,
-  "projectFilePath": "E:\\Yogesh\\SEO\\Yogihosting\\new\\Xaero\\Xaero\\Xaero.csproj",
+  "projectFilePath": "C:\\Users\\Avita\\Documents\\GitHub\\Xaero\\Xaero\\Xaero\\Xaero.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Avita\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Avita\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

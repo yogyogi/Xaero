@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Xaero.Models;
 using Xaero.Infrastructure;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using Microsoft.EntityFrameworkCore;
 
 namespace Xaero.Controllers
 {
@@ -85,53 +87,51 @@ namespace Xaero.Controllers
 
             List<ProductionCompany> result;
 
-            if (sortColumn == "")
-                result = context.ProductionCompany.Skip(skip).Take(pageSize).ToList();
-            else
+            var query = context.ProductionCompany.AsQueryable();
+
+            if (sortValue == "asc")
             {
-                if (sortValue == "asc")
+                switch (sortColumn)
                 {
-                    switch (sortColumn)
-                    {
-                        case "Id":
-                            result = context.ProductionCompany.OrderBy(s => s.Id).Skip(skip).Take(pageSize).ToList();
-                            break;
-                        case "Name":
-                            result = context.ProductionCompany.OrderBy(s => s.Name).Skip(skip).Take(pageSize).ToList();
-                            break;
-                        case "Annual Revenue":
-                            result = context.ProductionCompany.OrderBy(s => s.AnnualRevenue).Skip(skip).Take(pageSize).ToList();
-                            break;
-                        case "Establishment Date":
-                            result = context.ProductionCompany.OrderBy(s => s.EstablishmentDate).Skip(skip).Take(pageSize).ToList();
-                            break;
-                        default:
-                            result = context.ProductionCompany.OrderBy(s => s.Name).Skip(skip).Take(pageSize).ToList();
-                            break;
-                    }
-                }
-                else
-                {
-                    switch (sortColumn)
-                    {
-                        case "Id":
-                            result = context.ProductionCompany.OrderByDescending(s => s.Id).Skip(skip).Take(pageSize).ToList();
-                            break;
-                        case "Name":
-                            result = context.ProductionCompany.OrderByDescending(s => s.Name).Skip(skip).Take(pageSize).ToList();
-                            break;
-                        case "Annual Revenue":
-                            result = context.ProductionCompany.OrderByDescending(s => s.AnnualRevenue).Skip(skip).Take(pageSize).ToList();
-                            break;
-                        case "Establishment Date":
-                            result = context.ProductionCompany.OrderByDescending(s => s.EstablishmentDate).Skip(skip).Take(pageSize).ToList();
-                            break;
-                        default:
-                            result = context.ProductionCompany.OrderByDescending(s => s.Name).Skip(skip).Take(pageSize).ToList();
-                            break;
-                    }
+                    case "Id":
+                        query = query.OrderBy(s => s.Id);
+                        break;
+                    case "Name":
+                        query = query.OrderBy(s => s.Name);
+                        break;
+                    case "Annual Revenue":
+                        query = query.OrderBy(s => s.AnnualRevenue);
+                        break;
+                    case "Establishment Date":
+                        query = query.OrderBy(s => s.EstablishmentDate);
+                        break;
+                    default:
+                        query = query.OrderBy(s => s.Name);
+                        break;
                 }
             }
+            else
+            {
+                switch (sortColumn)
+                {
+                    case "Id":
+                        query = query.OrderByDescending(s => s.Id);
+                        break;
+                    case "Name":
+                        query = query.OrderByDescending(s => s.Name);
+                        break;
+                    case "Annual Revenue":
+                        query = query.OrderByDescending(s => s.AnnualRevenue);
+                        break;
+                    case "Establishment Date":
+                        query = query.OrderByDescending(s => s.EstablishmentDate);
+                        break;
+                    default:
+                        query = query.OrderByDescending(s => s.Name);
+                        break;
+                }
+            }
+            result = query.Skip(skip).Take(pageSize).ToList();
 
             return result;
         }

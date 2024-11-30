@@ -17,81 +17,81 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Xaero
 build_property.RootNamespace = Xaero
-build_property.ProjectDir = E:\Yogesh\SEO\Yogihosting\new\Xaero\Xaero\
+build_property.ProjectDir = C:\Users\Avita\Documents\GitHub\Xaero\Xaero\Xaero\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Yogesh\SEO\Yogihosting\new\Xaero\Xaero
+build_property.MSBuildProjectDirectory = C:\Users\Avita\Documents\GitHub\Xaero\Xaero\Xaero
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/Distribution/Create.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/Distribution/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpYnV0aW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/Distribution/Index.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/Distribution/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpYnV0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/Distribution/Update.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/Distribution/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpYnV0aW9uXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/Home/Index.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/Home/Privacy.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/MovieDistribution/Update.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/MovieDistribution/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVEaXN0cmlidXRpb25cVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/Movie/Create.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/Movie/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/Movie/Index.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/Movie/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/Movie/Update.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/Movie/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/Production/Create.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/Production/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdGlvblxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/Production/Index.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/Production/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdGlvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/Production/Update.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/Production/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdGlvblxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/Shared/Error.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/_ViewImports.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/_ViewStart.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Yogesh/SEO/Yogihosting/new/Xaero/Xaero/Views/Shared/_Layout.cshtml]
+[C:/Users/Avita/Documents/GitHub/Xaero/Xaero/Xaero/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-j9pxeanr7k

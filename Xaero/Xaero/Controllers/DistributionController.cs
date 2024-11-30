@@ -63,47 +63,45 @@ namespace Xaero.Controllers
 
             List<Distribution> result;
 
-            if (sortColumn == "")
-                result = context.Distribution.Skip(skip).Take(pageSize).Include(s => s.MovieDistribution_R).ThenInclude(r => r.Movie_R).ThenInclude(t => t.MovieDetail_R).ToList();
-            else
+            var query = context.Distribution.Include(s => s.MovieDistribution_R).ThenInclude(r => r.Movie_R).ThenInclude(t => t.MovieDetail_R).AsQueryable();
+
+            if (sortValue == "asc")
             {
-                if (sortValue == "asc")
+                switch (sortColumn)
                 {
-                    switch (sortColumn)
-                    {
-                        case "Id":
-                            result = context.Distribution.OrderBy(s => s.Id).Skip(skip).Take(pageSize).Include(s => s.MovieDistribution_R).ThenInclude(r => r.Movie_R).ThenInclude(t => t.MovieDetail_R).ToList();
-                            break;
-                        case "Name":
-                            result = context.Distribution.OrderBy(s => s.Name).Skip(skip).Take(pageSize).Include(s => s.MovieDistribution_R).ThenInclude(r => r.Movie_R).ThenInclude(t => t.MovieDetail_R).ToList();
-                            break;
-                        case "Location":
-                            result = context.Distribution.OrderBy(s => s.Location).Skip(skip).Take(pageSize).Include(s => s.MovieDistribution_R).ThenInclude(r => r.Movie_R).ThenInclude(t => t.MovieDetail_R).ToList();
-                            break;
-                        default:
-                            result = context.Distribution.OrderBy(s => s.Name).Skip(skip).Take(pageSize).Include(s => s.MovieDistribution_R).ThenInclude(r => r.Movie_R).ThenInclude(t => t.MovieDetail_R).ToList();
-                            break;
-                    }
-                }
-                else
-                {
-                    switch (sortColumn)
-                    {
-                        case "Id":
-                            result = context.Distribution.OrderByDescending(s => s.Id).Skip(skip).Take(pageSize).Include(s => s.MovieDistribution_R).ThenInclude(r => r.Movie_R).ThenInclude(t => t.MovieDetail_R).ToList();
-                            break;
-                        case "Name":
-                            result = context.Distribution.OrderByDescending(s => s.Name).Skip(skip).Take(pageSize).Include(s => s.MovieDistribution_R).ThenInclude(r => r.Movie_R).ThenInclude(t => t.MovieDetail_R).ToList();
-                            break;
-                        case "Location":
-                            result = context.Distribution.OrderByDescending(s => s.Location).Skip(skip).Take(pageSize).Include(s => s.MovieDistribution_R).ThenInclude(r => r.Movie_R).ThenInclude(t => t.MovieDetail_R).ToList();
-                            break;
-                        default:
-                            result = context.Distribution.OrderByDescending(s => s.Name).Skip(skip).Take(pageSize).Include(s => s.MovieDistribution_R).ThenInclude(r => r.Movie_R).ThenInclude(t => t.MovieDetail_R).ToList();
-                            break;
-                    }
+                    case "Id":
+                        query = query.OrderBy(s => s.Id);
+                        break;
+                    case "query":
+                        query = query.OrderBy(s => s.Name);
+                        break;
+                    case "Location":
+                        query = query.OrderBy(s => s.Location);
+                        break;
+                    default:
+                        query = query.OrderBy(s => s.Name);
+                        break;
                 }
             }
+            else
+            {
+                switch (sortColumn)
+                {
+                    case "Id":
+                        query = query.OrderByDescending(s => s.Id);
+                        break;
+                    case "Name":
+                        query = query.OrderByDescending(s => s.Name);
+                        break;
+                    case "Location":
+                        query = query.OrderByDescending(s => s.Location);
+                        break;
+                    default:
+                        query = query.OrderByDescending(s => s.Name);
+                        break;
+                }
+            }
+            result = query.Skip(skip).Take(pageSize).ToList();
 
             return result;
         }
